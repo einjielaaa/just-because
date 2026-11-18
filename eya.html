@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Eya ♡</title>
+  <link rel="stylesheet" href="eya.css">
+</head>
+<body>
+
+  <!-- Fireflies canvas -->
+  <canvas id="magic"></canvas>
+
+  <!-- SCREEN 1 -->
+  <section id="opening" class="screen active">
+    <div id="petals"></div>
+    <div class="intro-content">
+      <p class="small-text">a little something for you</p>
+      <h1>hey, eya! ♡</h1>
+      <button onclick="showMessage()">tap it! ♡</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 2 -->
+  <section id="message" class="screen hidden">
+    <div class="gift-area">
+      <p>hey eya! ♡</p>
+      <h1>this is for you.</h1>
+
+      <div class="gift" onclick="openGift()">
+        <div class="gift-lid">
+          <div class="bow"></div>
+        </div>
+        <div class="gift-box">
+          <div class="gift-ribbon"></div>
+        </div>
+      </div>
+
+      <p class="instruction">tap mo 'to, boi! ♡</p>
+    </div>
+  </section>
+
+  <!-- SCREEN 3 -->
+  <section id="flowers" class="screen hidden flower-screen">
+    <div class="firefly-layer"></div>
+
+    <h1 class="flower-heading">a little flower for you ♡</h1>
+
+    <div class="bouquet">
+      <div class="wrapping back-wrap"></div>
+      <div class="stems"></div>
+
+      <div class="leaves">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="lily lily-one">
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+        <span class="petal p6"></span>
+        <span class="center"></span>
+        <span class="stamen"></span>
+      </div>
+
+      <div class="lily lily-two">
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+        <span class="petal p6"></span>
+        <span class="center"></span>
+        <span class="stamen"></span>
+      </div>
+
+      <div class="lily lily-three">
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+        <span class="petal p6"></span>
+        <span class="center"></span>
+        <span class="stamen"></span>
+      </div>
+
+      <div class="lily lily-four">
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+        <span class="petal p6"></span>
+        <span class="center"></span>
+        <span class="stamen"></span>
+      </div>
+
+      <div class="wrapping front-wrap"></div>
+      <div class="bouquet-ribbon"></div>
+    </div>
+
+    <div class="envelope" onclick="openLetter()">
+      <div class="envelope-flap"></div>
+      <div class="envelope-heart">♡</div>
+      <p>for you</p>
+    </div>
+
+    <p class="letter-hint">tap the letter ♡</p>
+  </section>
+
+  <!-- LETTER -->
+  <div id="letter-overlay" class="hidden">
+    <div class="letter-paper">
+      <button class="close-letter" onclick="closeLetter()">×</button>
+      <div class="letter-decoration">♡ ✿ ♡</div>
+      <p>
+        i just want u to know how proud i am of uuu! 
+        i know kagabi you were feeling a little nervous and doubting yourself, pero look at u now. u made it through your first day, and im happy knowing you slowly get the hang of things. i hope u give yourself more credit kasi you did well todayyy. see? u don't have to figure everything out agad. take your time and trust yourself a little more. and these little flowers are for youuu. just a little something to celebrate your first day ^_^ i know it's just a small thing, pero i hope we never forget to celebrate even the little wins kasi they matter too. u tried something new, got through your first day, and did your best, and i think that's already something worth celebrating. so here's a little flower for you, as a reminder na you deserve to be appreciated :>
+      </p>
+      <div class="letter-decoration bottom-decoration"></div>
+    </div>
+  </div>
+
+  <script src="eya.js"></script>
+</body>
+</html>
